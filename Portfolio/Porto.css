@@ -20,6 +20,7 @@ body {
     --div-link-color: var(--primary-color);
     --div-link-hover-color: var(--secondary-color);
     --div-bg-color: var(--bg-light);
+    align-items: center;
 }
 
 body.dark-mode {
@@ -544,4 +545,42 @@ footer {
 
 .gradient-bg {
     background: var(--gradient-primary);
+}
+
+.resume-download-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .resume-download-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .resume-download-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+
+section:has(.resume-download-btn) {
+    text-align: center;
+    padding: 20px 0;
+    font-size: medium;
+}
+
+section:has(.resume-download-btn) p {
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
